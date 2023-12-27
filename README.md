@@ -1,6 +1,6 @@
 # Lenny - Ecommerce
 
-<img src="https://github.com/ElcanBadalovs/PNFT-Market-Registration/blob/main/PNFT%20Market.png?raw=true"></img>
+<img src="https://github.com/ElcanBadalovs/Lenny/blob/main/Lenny.png?raw=true"></img>
 
 # Start to project.
 
