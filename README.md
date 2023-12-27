@@ -6,11 +6,13 @@
 
 # STEP 1
 
-cd my-project>
-npm run develop
+<p>cd my-project></p>
+<p>npm run develop</p>
 
 # STEP 2
 
-cd Lenny
-npm run dev
-Go to http://localhost:5173/
+<p>cd Lenny</p>
+<br>
+<p>npm run dev</p>
+<br>
+<p>Go to http://localhost:5173/</p>
