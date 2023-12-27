@@ -1,0 +1,193 @@
+@import url(../../../../assets/style/_fonts.scss);
+.promo-banner {
+  padding: 20px 24px 0;
+  position: relative;
+  margin-bottom: 100px;
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding: 20px 25px 0;
+    margin-bottom: 100px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 20px 30px 0;
+    margin-bottom: 100px;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    padding: 20px 80px 0;
+    margin-bottom: 80px;
+  }
+  @media (min-width: 1440px) {
+    padding: 20px 120px 0;
+    margin-bottom: 120px;
+  }
+  .promo-banner-container {
+    width: 100%;
+    padding: 31px 24px 21px;
+    border: none;
+    border-radius: 16px;
+    background-color: rgba(252, 236, 225, 1);
+    @media (min-width: 480px) and (max-width: 767px) {
+      padding: 41px 34px 31px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 51px 44px 41px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 32px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      padding: 76px 50px 72px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 52px;
+    }
+    @media (min-width: 1440px) {
+      padding: 94px 135px;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      gap: 120px;
+    }
+    .promo-banner-img {
+      height: 210px;
+      margin-bottom: 32px;
+      @media (min-width: 480px) and (max-width: 767px) {
+        height: 220px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        position: absolute;
+        width: 260px;
+        height: 285px;
+        top: 5px;
+        left: 50px;
+        margin-bottom: 0;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        position: absolute;
+        width: 320px;
+        height: 351px;
+        top: 5px;
+        left: 170px;
+        margin-bottom: 0;
+      }
+      @media (min-width: 1440px) {
+        margin-bottom: 0;
+        position: absolute;
+        width: 375px;
+        height: 406px;
+        top: 5px;
+        left: 250px;
+      }
+    }
+    .promo-banner-box {
+      @media (min-width: 480px) and (max-width: 767px) {
+        width: 100%;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: 55%;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        width: 47%;
+      }
+      @media (min-width: 1440px) {
+        width: 39%;
+      }
+      .promo-banner-title {
+        margin-bottom: 12px;
+        font-family: "Clash Grotesk Semibold";
+        font-size: 18px;
+        font-weight: 600;
+        color: rgba(11, 15, 14, 1);
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 24px;
+          margin-bottom: 14px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 26px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 28px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 38px;
+          font-weight: 600;
+          margin-bottom: 16px;
+        }
+      }
+      .promo-banner-description {
+        margin-bottom: 32px;
+        font-family: "Clash Grotesk Regular";
+        font-size: 14px;
+        font-weight: 400;
+        color: rgba(129, 139, 156, 1);
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 20px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 16px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 18px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 18px;
+        }
+      }
+      .promo-banner-btns {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 13px;
+        button {
+          width: 100%;
+          padding: 12px 10px;
+          border-radius: 8px;
+          font-family: "Clash Grotesk Medium";
+          font-size: 14px;
+          font-weight: 500;
+          @media (min-width: 480px) and (max-width: 767px) {
+            padding: 14px 10px;
+            font-size: 15px;
+          }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 14px 10px;
+            font-size: 16px;
+          }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            padding: 14px 10px;
+            font-size: 16px;
+          }
+          @media (min-width: 1440px) {
+            padding: 14px 10px;
+            font-size: 18px;
+          }
+        }
+        .btn-buy {
+          border: none;
+          background-color: rgba(30, 76, 47, 1);
+          color: #fff;
+          cursor: pointer;
+          &:hover{
+            background-color: rgb(45, 114, 70);
+            transition: 1s ease;
+          }
+          &:not(:hover){
+            transition: 1s ease;
+          }
+        }
+        .btn-view {
+          border: 1px solid rgba(30, 76, 47, 1);
+          background-color: transparent;
+          color: rgba(30, 76, 47, 1);
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

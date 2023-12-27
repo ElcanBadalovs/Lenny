@@ -1,0 +1,111 @@
+@import url(../../../../../assets/style/_fonts.scss);
+.filter-box {
+  width: 100%;
+  .filter-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+    .filter-box-title {
+      font-family: "Clash Grotesk Semibold";
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      @media (min-width: 480px) and (max-width: 767px) {
+        font-size: 14px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 16px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 16px;
+      }
+    }
+    .filter-arrow {
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+    .active-arrow {
+      transform: rotate(0deg);
+    }
+  }
+  .filter-check-boxes {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    .price-range-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      gap: 8px;
+      cursor: pointer;
+      .price-range {
+        padding: 10px 16px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(228, 233, 238, 1);
+        border-radius: 8px;
+        background-color: transparent;
+        @media (min-width: 480px) and (max-width: 767px) {
+          width: 60%;
+        }
+        .currency {
+          font-size: 14px;
+          font-weight: 500;
+          border: none;
+          outline: none;
+        }
+        .price-range-line {
+          width: 1px;
+          height: 20px;
+          background-color: rgba(228, 233, 238, 1);
+        }
+        .price {
+          width: 100%;
+          border: none;
+          outline: none;
+        }
+      }
+      .min-max-price {
+        padding: 11px 16px;
+        border: 1px solid rgba(228, 233, 238, 1);
+        border-radius: 8px;
+        background-color: transparent;
+        font-family: "Clash Grotesk Regular";
+        font-size: 16px;
+        font-weight: 400;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 15px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 14px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 14px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .active-filter-check-boxes {
+    display: flex;
+    .filter-arrow {
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+    .active-arrow {
+      transform: rotate(0deg);
+    }
+  }
+}

@@ -1,0 +1,184 @@
+@import url(../../../../../assets/style/_fonts.scss);
+.testimonial {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  .testimonial-comment {
+    width: 100%;
+    .stars {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      margin-bottom: 12px;
+      @media (min-width: 480px) and (max-width: 767px) {
+        margin-bottom: 13px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        margin-bottom: 14px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        margin-bottom: 16px;
+      }
+      @media (min-width: 1440px) {
+        margin-bottom: 18px;
+      }
+      .star {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .testimonial-comment {
+      font-family: "Clash Grotesk Semibold";
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 2px;
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 15px;
+        margin-bottom: 4px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 18px;
+        margin-bottom: 4px;
+      }
+    }
+    .comment-date {
+      font-family: "Clash Grotesk Regular";
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(129, 139, 156, 1);
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 13px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 14px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 16px;
+      }
+    }
+  }
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .profil-info {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      .profile-image {
+        width: 24px;
+        height: 24px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          width: 25px;
+          height: 25px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          width: 27px;
+          height: 27px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          width: 28px;
+          height: 28px;
+        }
+        @media (min-width: 1440px) {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      .user-name {
+        font-family: "Clash Grotesk Medium";
+        font-size: 12px;
+        font-weight: 500;
+        color: #000;
+        cursor: pointer;
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 13px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 14px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .like-btn {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 8px;
+      @media (min-width: 480px) and (max-width: 767px) {
+        gap: 10px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        gap: 11px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        gap: 12px;
+      }
+      @media (min-width: 1440px) {
+        gap: 16px;
+      }
+      .like-dislike {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        border: 1px solid rgba(228, 233, 238, 1);
+        border-radius: 8px;
+        background-color: transparent;
+        font-family: "Clash Grotesk Regular";
+        font-size: 12px;
+        font-weight: 400;
+        cursor: pointer;
+        @media (min-width: 480px) and (max-width: 767px) {
+          gap: 5px;
+          font-size: 12px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          gap: 6px;
+          font-size: 13px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          gap: 8px;
+          font-size: 14px;
+        }
+        @media (min-width: 1440px) {
+          gap: 8px;
+          font-size: 16px;
+        }
+        .like-dislike-icon {
+          @media (min-width: 1440px) {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      .active-like {
+        .like-dislike-icon {
+          path {
+            stroke: #fff;
+            stroke-width: 1px;
+            fill: rgba(29, 158, 52, 1);
+          }
+        }
+      }
+      .active-dislike {
+        .like-dislike-icon {
+          path {
+            stroke: #fff;
+            stroke-width: 1px;
+            fill: rgb(158, 29, 29);
+          }
+        }
+      }
+    }
+  }
+}

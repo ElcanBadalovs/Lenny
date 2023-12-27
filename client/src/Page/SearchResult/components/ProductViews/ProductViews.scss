@@ -1,0 +1,89 @@
+@import url(../../../../assets/style/_fonts.scss);
+.product-views {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 32px;
+  .products-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    .pagination-btn {
+      width: 41px;
+      height: 41px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid rgba(228, 233, 238, 1);
+      border-radius: 8px;
+      background-color: transparent;
+      color: rgba(129, 139, 156, 1);
+      cursor: pointer;
+      font-family: "Clash Grotesk Medium";
+      font-size: 12px;
+      @media (min-width: 480px) and (max-width: 767px) {
+        width: 42px;
+        height: 42px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: 43px;
+        height: 43px;
+        font-size: 13px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+      }
+      @media (min-width: 1440px) {
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+      }
+    }
+    .active-btn {
+      color: rgb(29, 158, 52);
+    }
+    .prev-btn,
+    .next-btn {
+      border: none;
+      .prev-icon {
+        transform: rotate(90deg);
+      }
+      .next-icon {
+        transform: rotate(270deg);
+      }
+      .prev-icon,
+      .next-icon {
+        width: 20px;
+        height: 20px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          width: 22px;
+          height: 22px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          width: 23px;
+          height: 23px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          width: 24px;
+          height: 24px;
+        }
+        @media (min-width: 1440px) {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+}

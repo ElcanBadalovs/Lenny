@@ -1,0 +1,83 @@
+@import url(../../../../assets/style/_fonts.scss);
+.product-images-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  @media (min-width: 480px) and (max-width: 767px) {
+    min-width: 380px;
+    max-width: 480px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    min-width: 400px;
+    max-width: 410;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    min-width: 402px;
+    max-width: 412px;
+  }
+  @media (min-width: 1440px) {
+    min-width: 525px;
+    max-width: 580px;
+  }
+  .thumbnail-box {
+    position: relative;
+    padding: 40px 64px;
+    width: 100%;
+    background-color: rgba(246, 246, 246, 1);
+    border: none;
+    border-radius: 9px;
+    .thumbnail-product {
+      width: 100%;
+    }
+    .arrow-box-left {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      padding: 10px 15px;
+      border-radius: 50%;
+      background-color: rgba(11, 15, 14, 0.16);
+      cursor: pointer;
+      .arrow-left {
+        transform: rotate(90deg);
+      }
+    }
+    .arrow-box-right {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      padding: 10px 15px;
+      border-radius: 50%;
+      background-color: rgba(11, 15, 14, 0.16);
+      cursor: pointer;
+      .arrow-right {
+        transform: rotate(270deg);
+      }
+    }
+  }
+  .product-images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    @media (min-width: 1440px) {
+      gap: 17px;
+    }
+    .image-box {
+      padding: 13px;
+      width: 100%;
+      background-color: rgba(246, 246, 246, 1);
+      border: none;
+      border-radius: 9px;
+      .product-image {
+        width: 100%;
+      }
+    }
+    .active-image-box {
+      border: 1px solid rgba(30, 76, 47, 1);
+    }
+  }
+}

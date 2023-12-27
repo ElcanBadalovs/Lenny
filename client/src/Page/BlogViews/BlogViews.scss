@@ -1,0 +1,136 @@
+@import url(../../assets/style/_fonts.scss);
+.blog-page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 60px;
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding: 42px 25px 60px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 52px 30px 70px;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    padding: 60px 80px 80px;
+  }
+  @media (min-width: 1440px) {
+    padding: 60px 120px 120px;
+  }
+  .background-layout {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 160px;
+    background-color: rgba(247, 247, 247, 1);
+    z-index: -99;
+    @media (min-width: 480px) and (max-width: 767px) {
+      height: 180px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      height: 220px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      height: 230px;
+    }
+    @media (min-width: 1440px) {
+      height: 250px;
+    }
+  }
+  .img {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    @media (min-width: 480px) and (max-width: 767px) {
+      height: 240px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      height: 300px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      height: 340px;
+    }
+    @media (min-width: 1440px) {
+      height: 500px;
+    }
+  }
+  .blog-page-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 50px;
+    @media (min-width: 768px) and (max-width: 1023px) {
+      flex-direction: row;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      flex-direction: row;
+    }
+    @media (min-width: 1440px) {
+      flex-direction: row;
+    }
+    .blog-text {
+      width: 100%;
+      h1 {
+        font-family: "Clash Grotesk Semibold";
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 24px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 20px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 22px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 24px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 32px;
+        }
+      }
+      h3 {
+        font-family: "Clash Grotesk Semibold";
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 12px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 18px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 22px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 24px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 26px;
+        }
+      }
+      h4 {
+        font-family: "Clash Grotesk Regular";
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(129, 139, 156, 1);
+        margin-bottom: 24px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 18px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 19px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 20px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+}

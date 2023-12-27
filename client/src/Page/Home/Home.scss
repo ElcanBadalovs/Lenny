@@ -1,0 +1,236 @@
+@import url(../../assets/style/_fonts.scss);
+.home {
+  .home-header {
+    max-width: 100vw;
+    padding: 39px 0 0;
+    background-color: #F5F4F5FF;
+    @media (min-width: 700px) and (max-width: 1224px) {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+    @media (min-width: 1224px) {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+    .home-title {
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 700px) and (max-width: 1224px) {
+        width: 100%;
+        padding: 60px 0 0 80px;
+        align-items: start;
+      }
+      @media (min-width: 1224px) {
+        width: 100%;
+        padding: 100px 0 0 120px;
+        align-items: start;
+      }
+      .header-text {
+        font-family: "Clash Grotesk Semibold";
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 39.2px;
+        color: rgba(11, 15, 14, 1);
+        margin-bottom: 16px;
+        @media (min-width: 700px) and (max-width: 1224px) {
+          font-size: 34px;
+          line-height: 40.8px;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 1224px) {
+          font-size: 58px;
+          line-height: 69.6px;
+          margin-bottom: 16px;
+        }
+      }
+      .description-text {
+        font-family: "Clash Grotesk Regular";
+        font-size: 13px;
+        font-weight: 100;
+        line-height: 22.4px;
+        color: rgba(129, 139, 156, 1);
+        margin-bottom: 32px;
+        @media (min-width: 700px) and (max-width: 1224px) {
+          font-size: 18px;
+          line-height: 27.6px;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 1224px) {
+          font-size: 21px;
+          line-height: 28.8px;
+          margin-bottom: 32px;
+        }
+      }
+      .title-btn-box {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        @media (min-width: 700px) and (max-width: 1224px) {
+          flex-direction: unset;
+          padding-right: 45px;
+        }
+        @media (min-width: 1224px) {
+          flex-direction: unset;
+          padding: 0 225px 0 0;
+        }
+        button {
+          width: 100%;
+          padding: 14px 10px;
+          border-radius: 8px;
+          font-family: "Clash Grotesk Semibold";
+          font-size: 14px;
+          font-weight: 600;
+          cursor: pointer;
+        }
+        .btn-buy {
+          border: none;
+          background-color: rgba(30, 76, 47, 1);
+          color: #fff;
+        }
+        .btn-view {
+          border: 1px solid rgba(30, 76, 47, 1);
+          background-color: transparent;
+          color: rgba(30, 76, 47, 1);
+        }
+      }
+    }
+    .home-product-container {
+      position: relative;
+      width: 100%;
+      min-height: 351px;
+      max-height: 428px;
+      background-image: url(../../assets/image/image.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      @media (min-width: 700px) and (max-width: 1224px) {
+        min-height: 428px;
+        max-height: 528px;
+        background-position: center;
+      }
+      @media (min-width: 1224px) {
+        min-height: 670px;
+        height: 700px;
+        background-position: 70% 50%;
+      }
+      .home-product-box {
+        position: absolute;
+        top: 60px;
+        left: 92px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+        @media (min-width: 700px) and (max-width: 1224px) {
+          top: 75px;
+          left: 130px;
+        }
+        @media (min-width: 1224px) {
+          top: 125px;
+          left: 150px;
+        }
+        .product-card-element {
+          @media (min-width: 700px) {
+            width: 42px;
+            height: 42px;
+          }
+        }
+      }
+      .arrow-box {
+        position: absolute;
+        top: 40%;
+        right: 50px;
+        padding: 11px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+        @media (min-width: 900px) {
+          display: flex;
+        }
+        @media (min-width: 1224px) {
+          top: 50%;
+          right: 100px;
+          padding: 14px;
+        }
+        .arrow-rigth {
+          width: 20px;
+          height: 20px;
+          transform: rotate(270deg);
+          @media (min-width: 1224px) {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+    }
+  }
+  .category-container {
+    width: 100%;
+    padding: 63px 24px 100px;
+    @media (min-width: 700px){
+      padding: 60px 80px;
+    }
+    @media (min-width: 1024px){
+      padding: 80px 120px 22px;
+    }
+    .category-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 37px;
+      @media (min-width: 700px){
+        margin-bottom: 32px;
+      }
+      @media (min-width: 1024px){
+        margin-bottom: 52px;
+      }
+      .category-header-text {
+        font-family: "Clash Grotesk Semibold";
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 25.2px;
+        color: rgba(11, 15, 14, 1);
+        @media (min-width: 700px){
+          font-size: 28px;
+        }
+        @media (min-width: 1024px){
+          font-size: 38px;
+        }
+      }
+      .view-detail-btn {
+        padding: 6px 12px;
+        border: 1px solid rgba(30, 76, 47, 1);
+        border-radius: 8px;
+        background-color: transparent;
+        font-family: "Clash Grotesk Semibold";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 19.6px;
+        color: rgba(30, 76, 47, 1);
+        cursor: pointer;
+        @media (min-width: 700px){
+          padding: 10px 16px;
+          font-size: 16px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

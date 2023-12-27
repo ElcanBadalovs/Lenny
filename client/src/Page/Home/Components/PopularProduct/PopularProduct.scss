@@ -1,0 +1,114 @@
+.popular-product {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  padding: 0 24px;
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding: 0 25px;
+    margin-bottom: 115px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 0 30px;
+    margin-bottom: 130px;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    padding: 0 80px;
+    margin-bottom: 140px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 120px;
+    margin-bottom: 160px;
+  }
+
+  .popular-product-header-text {
+    font-family: "Clash Grotesk Semibold";
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 21px;
+      margin-bottom: 13px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: 23px;
+      margin-bottom: 15px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 38px;
+      margin-bottom: 16px;
+    }
+  }
+  .popular-product-text {
+    font-family: "Clash Grotesk Regular";
+    font-size: 14px;
+    font-weight: 400;
+    color: #818b9c;
+    margin-bottom: 29px;
+    @media (min-width: 480px) and (max-width: 767px) {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      font-size: 15px;
+      margin-bottom: 31px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      font-size: 16px;
+      margin-bottom: 52px;
+    }
+    @media (min-width: 1440px) {
+      font-size: 18px;
+      margin-bottom: 52px;
+    }
+  }
+  .popular-product-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 17px;
+  }
+  .popular-product-btn {
+    padding: 14px 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(30, 76, 47, 1);
+    border-radius: 8px;
+    background-color: transparent;
+    font-family: "Clash Grotesk Semibold";
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(30, 76, 47, 1);
+    margin-top: 46px;
+    cursor: pointer;
+    @media (min-width: 480px) and (max-width: 767px) {
+      padding: 16px 36px;
+      font-size: 15px;
+      margin-top: 48px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 17px 38px;
+      font-size: 16px;
+      margin-top: 50px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      padding: 18px 44px;
+      font-size: 16px;
+      margin-top: 65px;
+    }
+    @media (min-width: 1440px) {
+      padding: 20px 48px;
+      font-size: 16px;
+      margin-top: 52px;
+    }
+  }
+}

@@ -1,0 +1,122 @@
+.shopping-lists {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  .lists-content {
+    width: 100%;
+    padding: 16px;
+    gap: 24px;
+    border: 1px solid rgba(228, 233, 238, 1);
+    border-radius: 12px;
+    background-color: #fff;
+    .add-btn {
+      padding: 14px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      border-radius: 8px;
+      border: none;
+      background-color: rgba(30, 76, 47, 1);
+      color: #fff;
+      font-family: "Clash Grotesk Medium";
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover{
+        background-color: rgb(45, 114, 70);
+        transition: 1s ease;
+      }
+      &:not(:hover){
+        transition: 1s ease;
+      }
+      @media (min-width: 480px) and (max-width: 767px) {
+        font-size: 12px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 13px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 14px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 16px;
+      }
+    }
+    .company {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      .company-img {
+        width: 40px;
+        border: 1px solid rgba(241, 241, 241, 1);
+        border-radius: 50%;
+        box-shadow: 0px 2px 8px 0px rgba(129, 139, 156, 0.07);
+        margin-right: 10px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          width: 41px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          width: 42px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          width: 44px;
+        }
+        @media (min-width: 1440px) {
+          width: 46px;
+        }
+      }
+      .company-text {
+        .company-name {
+          font-family: "Clash Grotesk Semibold";
+          font-size: 12px;
+          font-weight: 600;
+          color: #000;
+          margin-bottom: 4px;
+          @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 12px;
+          }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 13px;
+          }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            font-size: 14px;
+          }
+          @media (min-width: 1440px) {
+            font-size: 20px;
+          }
+        }
+        .company-owner {
+          font-family: "Clash Grotesk Regular";
+          font-size: 10px;
+          font-weight: 400;
+          color: rgba(129, 139, 156, 1);
+          @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 10px;
+          }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 11px;
+          }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            font-size: 12px;
+          }
+          @media (min-width: 1440px) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .lists-box {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
+
+.no-products{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

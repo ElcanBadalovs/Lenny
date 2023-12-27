@@ -1,0 +1,113 @@
+@import url(../../../../assets/style/_fonts.scss);
+.category-box {
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+  overflow-x: scroll;
+  scrollbar-color: #fff;
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding-bottom: 20px;
+    gap: 19px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding-bottom: 10px;
+    padding-bottom: 25px;
+    gap: 21px;
+    scrollbar-color: rgba(30, 76, 47, 1);
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    padding-bottom: 32px;
+    gap: 24px;
+    padding-bottom: 12px;
+    scrollbar-color: rgba(30, 76, 47, 1);
+  }
+  @media (min-width: 1440px) {
+    margin-bottom: 52px;
+    gap: 24px;
+    padding-bottom: 14px;
+    scrollbar-color: rgba(30, 76, 47, 1);
+  }
+  &::-webkit-scrollbar {
+    width: 0px;
+  }
+  &::-webkit-scrollbar-thumb {
+    height: 1px;
+    background-color: #fff;
+    border-radius: 8px;
+    @media (min-width: 768px) {
+      background-color: rgba(30, 76, 47, 1);
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgba(228, 233, 238, 1);
+    border-radius: 8px;
+  }
+  .category-product-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 140px;
+    height: 153px;
+    padding: 23px 13px 20px;
+    border: 2px solid rgba(228, 233, 238, 1);
+    border-radius: 12px;
+    @media (min-width: 480px) and (max-width: 767px) {
+      min-width: 150px;
+      height: 163px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      min-width: 150px;
+      height: 163px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      min-width: 157px;
+      height: 170px;
+    }
+    @media (min-width: 1440px) {
+      min-width: 180px;
+      height: 198px;
+    }
+    h3 {
+      font-family: "Clash Grotesk Semibold";
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 22.4px;
+      color: rgba(11, 15, 14, 1);
+      cursor: pointer;
+      @media (min-width: 480px) and (max-width: 767px) {
+        font-size: 14px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-family: "Clash Grotesk Regular";
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 22.4px;
+      color: rgba(129, 139, 156, 1);
+      @media (min-width: 480px) and (max-width: 767px) {
+        font-size: 13px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 13px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 14px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

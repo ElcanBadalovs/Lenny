@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "singularName": "comment",
+    "pluralName": "comments",
+    "displayName": "comment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Username": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string"
+    },
+    "comment": {
+      "type": "string"
+    },
+    "raiting": {
+      "type": "integer",
+      "max": 5,
+      "min": 0
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "like": {
+      "type": "integer",
+      "min": 0
+    },
+    "topics": {
+      "type": "enumeration",
+      "enum": [
+        "Product Quality",
+        "Seller Services",
+        "Product Price",
+        "Shipment",
+        "Match with Description"
+      ]
+    }
+  }
+}

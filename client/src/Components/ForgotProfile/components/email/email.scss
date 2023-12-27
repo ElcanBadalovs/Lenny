@@ -1,0 +1,50 @@
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .email-input{
+        width: 100%;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 12px;
+        background-color: rgba(246, 248, 250, 1);
+        outline: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 14px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 14px;
+          margin-bottom: 9px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 15px;
+          margin-bottom: 15px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 16px;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 17px;
+          margin-bottom: 16px;
+        }
+        ::placeholder {
+          font-size: 14px;
+          color: rgba(129, 139, 156, 1);
+        }
+    }
+    .next-btn{
+        width: 100%;
+        padding: 11px 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: rgba(30, 76, 47, 1);
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 34px;
+        cursor: pointer;
+        letter-spacing: 2px;
+    }
+}

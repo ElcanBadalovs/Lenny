@@ -1,0 +1,11 @@
+.sub-categories{
+    padding: 10px 0 0 10px;
+    margin-bottom: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.activeSubCategory{
+    display: flex;
+}

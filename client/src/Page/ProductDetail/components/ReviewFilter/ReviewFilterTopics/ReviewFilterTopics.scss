@@ -1,0 +1,81 @@
+@import url(../../../../../assets/style/_fonts.scss);
+.review-filter-box {
+  width: 100%;
+  .review-filter-box-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+    .review-filter-box-title {
+      font-family: "Clash Grotesk Semibold";
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      @media (min-width: 480px) and (max-width: 767px) {
+        font-size: 14px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 15px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 16px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 16px;
+      }
+    }
+    .review-filter-arrow {
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+    .active-arrow {
+      transform: rotate(0deg);
+    }
+  }
+  .review-filter-check-boxes {
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 12px;
+    .review-filter-check-box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      .active-tick {
+        path {
+          stroke: #fff;
+          fill: rgba(27, 33, 36, 1);
+        }
+      }
+      .review-filter-check-box-name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Clash Grotesk Regular";
+        font-size: 16px;
+        font-weight: 400;
+        color: rgba(129, 139, 156, 1);
+        gap: 4px;
+      }
+    }
+    .check-box-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .active-filter-check-boxes {
+    display: flex;
+    .review-filter-arrow {
+      transform: rotate(180deg);
+      cursor: pointer;
+    }
+    .active-arrow {
+      transform: rotate(0deg);
+    }
+  }
+}

@@ -1,0 +1,174 @@
+@import url(../../assets/style/_fonts.scss);
+.shopping-chart {
+  width: 100%;
+  position: relative;
+  padding: 32px 24px 60px;
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding: 42px 25px 60px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 52px 30px 70px;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    padding: 60px 80px 80px;
+  }
+  @media (min-width: 1440px) {
+    padding: 60px 120px 120px;
+  }
+  .background-layout {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 240px;
+    background-color: rgba(247, 247, 247, 1);
+    z-index: -99;
+    @media (min-width: 480px) and (max-width: 767px) {
+      height: 240px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      height: 250px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      height: 260px;
+    }
+    @media (min-width: 1440px) {
+      height: 280px;
+    }
+  }
+  .shopping-chart-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 52px;
+    }
+    .header-text-box {
+      width: 100%;
+      .shopping-chart-header-title {
+        font-family: "Clash Grotesk Semibold";
+        font-size: 18px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 4px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 19px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 19px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 20px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 24px;
+        }
+      }
+      .shopping-chart-header-text {
+        font-family: "Clash Grotesk Regular";
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(129, 139, 156, 1);
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 13px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 13px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 14px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+    }
+    .search-box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 24px;
+      .search-box-text {
+        width: 70px;
+        display: none;
+        font-family: "Clash Grotesk Regular";
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(129, 139, 156, 1);
+        @media (min-width: 768px) {
+          display: inline-block;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 14px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+      .select {
+        padding: 11px 16px;
+        width: 100%;
+        border: 1px solid rgba(228, 233, 238, 1);
+        border-radius: 8px;
+        background-color: transparent;
+        font-family: "Clash Grotesk Medium";
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        outline: none;
+        @media (min-width: 768px) {
+          width: 145px;
+        }
+        .option {
+          padding: 11px 16px;
+          background-color: rgb(247, 247, 247);
+          .option-text {
+            @media (min-width: 768px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .shopping-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 25px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+    .shopping-box{
+      width: 100%;
+    }
+  }
+  .related {
+    @media (max-width: 767px) {
+      margin-bottom: 52px;
+    }
+  }
+  .deactive-related{
+    display: none;
+  }
+}
+
+.active-desctop {
+  width: 40%;
+  display: none;
+  @media (min-width: 768px) {
+    display: inline-block !important;
+  }
+}
+.active-mobile {
+  width: 100%;
+  display: none;
+  @media (max-width: 767px) {
+    display: inline-block !important;
+  }
+}

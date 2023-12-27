@@ -1,0 +1,246 @@
+.login-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(11, 15, 14, 0.5);
+  z-index: 999;
+  padding: 32px 24px;
+  @media (min-width: 480px) and (max-width: 767px) {
+    padding: 42px 25px 60px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    padding: 52px 30px 70px;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    padding: 60px 80px 80px;
+  }
+  @media (min-width: 1440px) {
+    padding: 60px 120px 120px;
+  }
+  .login {
+    width: 100%;
+    border: 1px solid rgba(228, 233, 238, 1);
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 32px 24px 24px;
+    @media (min-width: 480px) and (max-width: 767px) {
+      width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      width: 400px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      width: 440px;
+    }
+    @media (min-width: 1440px) {
+      width: 490px;
+    }
+    .login-header-box {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .login-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 24px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 22px;
+          margin-bottom: 26px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 23px;
+          margin-bottom: 28px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 24px;
+          margin-bottom: 32px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 26px;
+          margin-bottom: 34px;
+        }
+      }
+      .xmark{
+        cursor: pointer;
+      }
+    }
+    .form {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .form-title {
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 11px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 17px;
+          margin-bottom: 13px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 18px;
+          margin-bottom: 14px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 19px;
+          margin-bottom: 15px;
+        }
+      }
+      .form-input {
+        width: 100%;
+        padding: 10px 16px;
+        border: none;
+        border-radius: 12px;
+        background-color: rgba(246, 248, 250, 1);
+        outline: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+        margin-bottom: 14px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 14px;
+          margin-bottom: 9px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 15px;
+          margin-bottom: 15px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 16px;
+          margin-bottom: 16px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 17px;
+          margin-bottom: 16px;
+        }
+        ::placeholder {
+          font-size: 14px;
+          color: rgba(129, 139, 156, 1);
+        }
+      }
+      .trouble-btn {
+        text-align: right;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(29, 158, 52, 1);
+        cursor: pointer;
+        margin-bottom: 24px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 12px;
+          margin-bottom: 26px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 13px;
+          margin-bottom: 28px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 14px;
+          margin-bottom: 32px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 16px;
+          margin-bottom: 34px;
+        }
+      }
+      .form-send-btn {
+        width: 100%;
+        padding: 11px 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: rgba(30, 76, 47, 1);
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 34px;
+        cursor: pointer;
+        letter-spacing: 2px;
+      }
+      .login-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 24px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          margin-bottom: 24px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          margin-bottom: 25px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          margin-bottom: 26px;
+        }
+        @media (min-width: 1440px) {
+          margin-bottom: 27px;
+        }
+        .login-line {
+          width: 100%;
+          height: 1px;
+          background-color: rgba(228, 233, 238, 1);
+        }
+        .login-box-text {
+          min-width: 117px;
+          font-size: 12px;
+          font-weight: 500;
+          color: rgba(129, 139, 156, 1);
+          @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 12px;
+          }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            min-width: 127px;
+            font-size: 13px;
+          }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            min-width: 136px;
+            font-size: 14px;
+          }
+          @media (min-width: 1440px) {
+            min-width: 146px;
+            font-size: 15px;
+          }
+        }
+      }
+      .facebook-btn {
+        width: 100%;
+        padding: 12px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid rgba(228, 233, 238, 1);
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #000;
+        cursor: pointer;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 14px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 15px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 16px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.active-login {
+  display: flex;
+}

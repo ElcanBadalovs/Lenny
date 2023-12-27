@@ -1,0 +1,299 @@
+@import url(../../../../../assets/style/_fonts.scss);
+
+.product-card {
+  position: relative;
+  width: 155px;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  user-select: none;
+  transition: 2s ease;
+  @media (min-width: 480px) and (max-width: 767px) {
+    width: 155px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 175px;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    width: 198px;
+  }
+  @media (min-width: 1440px) {
+    width: 282px;
+  }
+
+  .favorite-product {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .product-img-box {
+    width: 100%;
+    padding: 20px 32px;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    background-color: rgba(246, 246, 246, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: 480px) and (max-width: 767px) {
+      padding: 22px 34px;
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 24px 36px;
+    }
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      padding: 35px 39px;
+    }
+    @media (min-width: 1440px) {
+      padding: 50px 51px;
+    }
+    .product-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .product-info {
+    padding: 8px;
+    @media (min-width: 700px) and (max-width: 1224px) {
+      padding: 10px;
+    }
+    .title-price {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5px;
+      .product-title {
+        font-family: "Clash Grotesk Semibold";
+        font-weight: 600;
+        color: rgba(11, 15, 14, 1);
+        cursor: pointer;
+        font-size: 12px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 11px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 13px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 15px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 19px;
+        }
+      }
+      .product-price {
+        color: #1d9e34ff;
+        font-size: 12px;
+        font-family: "Clash Grotesk Semibold";
+
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 13px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 15px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 16px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .product-description {
+      font-family: "Clash Grotesk Regular";
+      font-size: 10px;
+      font-weight: 400;
+      color: rgba(129, 139, 156, 1);
+      margin-bottom: 5px;
+      @media (min-width: 480px) and (max-width: 767px) {
+        font-size: 12px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        font-size: 13px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        font-size: 14px;
+      }
+      @media (min-width: 1440px) {
+        font-size: 16px;
+      }
+    }
+    .product-info-box {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 4px;
+      .product-raiting,
+      .product-sold {
+        font-family: "Clash Grotesk Medium";
+        font-size: 10px;
+        font-weight: 500;
+        color: rgba(11, 15, 14, 1);
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 12px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 13px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 14px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 16px;
+        }
+      }
+      .product-ellipse {
+        width: 4px;
+        height: 4px;
+        background-color: rgba(228, 233, 238, 1);
+        border-radius: 50%;
+      }
+    }
+  }
+}
+.block-style{
+  width: 100%;
+  min-height: 90px;
+  display: flex;
+  transition: 2s ease;
+  @media (min-width: 480px) and (max-width: 767px) {
+    min-height: 110px;
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    min-height: 130px;
+  }
+  @media (min-width: 1024px) and (max-width: 1439px) {
+    min-height: 150px;
+  }
+  @media (min-width: 1440px) {
+    min-height: 150px;
+  }
+  .favorite-product{
+    background-color: rgba(228, 233, 238, 1);
+  }
+  .product-block-style{
+    display: flex;
+    gap: 10px;
+    .product-img-box{
+      padding: 10px;
+      transition: 2s ease;
+      min-width: 90px;
+      max-width: 90px;
+      height: 100%;
+      @media (min-width: 480px) and (max-width: 767px) {
+        min-width: 110px;
+        max-width: 110px;
+      }
+      @media (min-width: 768px) and (max-width: 1023px) {
+        min-width: 130px;
+        max-width: 130px;
+      }
+      @media (min-width: 1024px) and (max-width: 1439px) {
+        min-width: 140px;
+        max-width: 140px;
+      }
+      @media (min-width: 1440px) {
+        min-width: 140px;
+        max-width: 140px;
+      }
+    }
+    .product-info{
+      width: 100%;
+      .title-price{
+        margin-bottom: 8px;
+        .product-title{
+          width: 100px;
+          font-size: 16px;
+          @media (min-width: 480px) and (max-width: 767px) {
+            width: 200px;
+            font-size: 16px;
+          }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            width: 240px;
+            font-size: 17px;
+          }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            width: 350px;
+            font-size: 18px;
+          }
+          @media (min-width: 1440px) {
+            width: 400px;
+            font-size: 19px;
+          }
+        }
+        .product-price{
+          font-size: 16px;
+          @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 16px;
+          }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 17px;
+          }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            font-size: 18px;
+          }
+          @media (min-width: 1440px) {
+            font-size: 19px;
+          }
+        }
+      }
+      .product-description{
+        font-size: 14px;
+        margin-bottom: 6px;
+        @media (min-width: 480px) and (max-width: 767px) {
+          font-size: 14px;
+        }
+        @media (min-width: 768px) and (max-width: 1023px) {
+          font-size: 15px;
+        }
+        @media (min-width: 1024px) and (max-width: 1439px) {
+          font-size: 16px;
+        }
+        @media (min-width: 1440px) {
+          font-size: 17px;
+        }
+      }
+      .product-info-box{
+        gap: 6px;
+        .star-icon{
+          width: 18px;
+          height: 18px;
+        }
+        .product-raiting, .product-sold{
+          font-size: 14px;
+          @media (min-width: 480px) and (max-width: 767px) {
+            font-size: 14px;
+          }
+          @media (min-width: 768px) and (max-width: 1023px) {
+            font-size: 15px;
+          }
+          @media (min-width: 1024px) and (max-width: 1439px) {
+            font-size: 16px;
+          }
+          @media (min-width: 1440px) {
+            font-size: 17px;
+          }
+        }
+        .product-ellipse{
+          width: 5px;
+          height: 5px;
+        }
+      }
+    }
+  }
+  
+}
