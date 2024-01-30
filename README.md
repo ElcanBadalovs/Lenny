@@ -11,6 +11,6 @@
 
 # STEP 2
 
-<p>cd Lenny</p>
+<p>cd client</p>
 <p>npm run dev</p>
 <p>Go to http://localhost:5173/</p>
